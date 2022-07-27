@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cc964c1-66c9-4323-86e9-09cadfba6fee" name="Changes" comment="second commit">
-      <change afterPath="$PROJECT_DIR$/src/main/java/products/Cola.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/products/Crisps.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/products/Sweets.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coins/Coin.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/coins/CoinType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vendingMachine/CodeType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vendingMachine/CoinReturn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vendingMachine/Drawer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/vendingMachine/VendingMachine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/coinTests/CoinTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/productTests/ProductTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/vendingMachineTests/CoinReturnTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/vendingMachineTests/DrawerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/vendingMachineTests/VendingMachineTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/products/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/products/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ProductTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +29,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
       </list>
     </option>
@@ -47,12 +57,102 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.0"
-
   }
 }]]></component>
+  <component name="RunManager" selected="JUnit.VendingMachineTest">
+    <configuration name="VendingMachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vendingMachineTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vendingMachineTests" />
+      <option name="MAIN_CLASS_NAME" value="vendingMachineTests.VendingMachineTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendingMachineTest.canCheckPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vendingMachineTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vendingMachineTests" />
+      <option name="MAIN_CLASS_NAME" value="vendingMachineTests.VendingMachineTest" />
+      <option name="METHOD_NAME" value="canCheckPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendingMachineTest.canGetDrawer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vendingMachineTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vendingMachineTests" />
+      <option name="MAIN_CLASS_NAME" value="vendingMachineTests.VendingMachineTest" />
+      <option name="METHOD_NAME" value="canGetDrawer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendingMachineTest.canGetProduct" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vendingMachineTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vendingMachineTests" />
+      <option name="MAIN_CLASS_NAME" value="vendingMachineTests.VendingMachineTest" />
+      <option name="METHOD_NAME" value="canGetProduct" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendingMachineTest.canGetProductPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vendingMachineTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vendingMachineTests" />
+      <option name="MAIN_CLASS_NAME" value="vendingMachineTests.VendingMachineTest" />
+      <option name="METHOD_NAME" value="canGetProductPrice" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.VendingMachineTest" />
+        <item itemvalue="JUnit.VendingMachineTest.canCheckPrice" />
+        <item itemvalue="JUnit.VendingMachineTest.canGetProductPrice" />
+        <item itemvalue="JUnit.VendingMachineTest.canGetProduct" />
+        <item itemvalue="JUnit.VendingMachineTest.canGetDrawer" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -90,7 +190,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="iain" />
+                        <option value="develop" />
                       </list>
                     </value>
                   </entry>
