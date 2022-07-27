@@ -116,6 +116,21 @@ public class VendingMachineTest {
         assertEquals(true, vendingMachine.checkBalance(crisps));
     }
 
+    @Test
+    public void canUpdateTill(){
+        vendingMachine.addCoin(coin);
+        vendingMachine.addCoin(coin50);
+        assertEquals(70, vendingMachine.getChangeValue(cola));
+    }
+
+    @Test
+    public void canReturnChange(){
+        vendingMachine.returnChange(140);
+        assertEquals(140, vendingMachine.getCoinReturnValue());
+    }
+
+
+
 
 
 

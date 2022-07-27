@@ -31,4 +31,8 @@ public class CoinReturn {
     public void clear(){
         returned.clear();
     }
+
+    public void setReturned(ArrayList<Coin> returned) {
+        this.returned = returned;
+    }
 }
