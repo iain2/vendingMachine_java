@@ -139,7 +139,7 @@ public class VendingMachineTest {
     }
 
     @Test
-    public void canPurchaseItemInsufucientFunds(){
+    public void canPurchaseItemInsiffucientFunds(){
         vendingMachine.addCoin(coin20);
         Product e = vendingMachine.purchase(drawer1);
         assertNull( e);

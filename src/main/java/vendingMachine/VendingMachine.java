@@ -80,66 +80,30 @@ public class VendingMachine {
     public void returnChange(int change) {
         ArrayList<Integer> numberList = new ArrayList<>();
         ArrayList<Coin> changeList = new ArrayList<>();
-        int pounds = change / 100;
-        int r = change % 100;
-        int fiftyPence = r / 50;
-        int r2 = r % 50;
-        int twentyPence = r2 / 20;
-        int r3 = r2 % 20;
-        int tenPence = r3 / 10;
-        int r4 = r3 % 10;
-        int fivePence = r4 / 5;
-        int r5 = r4 % 5;
-        int twoPence = r5 / 2;
-        int onePence = r5 % 2;
+        ArrayList<Coin> coins = new ArrayList<>();
+        coins.add(new Coin(CoinType.ONEPOUND));
+        coins.add(new Coin(CoinType.FIFTYPENCE));
+        coins.add(new Coin(CoinType.TWENTYPENCE));
+        coins.add(new Coin(CoinType.TENPENCE));
+        coins.add(new Coin(CoinType.FIVEPENCE));
+        coins.add(new Coin(CoinType.TWOPENCE));
+        coins.add(new Coin(CoinType.ONEPENCE));
 
-
-        int counter = 0;
-        while (counter < pounds){
-            counter += 1;
-            Coin coin = new Coin(CoinType.ONEPOUND);
-            changeList.add(coin);
+        int r = change;
+        for(int i = 0; i < coins.size(); i++) {
+            int c = r / coins.get(i).getCoinValue();
+            r = change % coins.get(i).getCoinValue();
+            numberList.add(c);
         }
-        counter = 0;
-        while (counter < fiftyPence){
-            counter += 1;
-            Coin coin = new Coin(CoinType.FIFTYPENCE);
-            changeList.add(coin);
+        for(int i = 0; i < numberList.size(); i ++){
+            int counter = 0;
+            while (counter < numberList.get(i)){
+                counter += 1;
+                Coin coin = coins.get(i);
+                changeList.add(coin);
+            }
         }
-        counter = 0;
-        while (counter < twentyPence){
-            counter += 1;
-            Coin coin = new Coin(CoinType.TWENTYPENCE);
-            changeList.add(coin);
-        }
-        counter = 0;
-        while (counter < tenPence){
-            counter += 1;
-            Coin coin = new Coin(CoinType.TENPENCE);
-            changeList.add(coin);
-        }
-        counter = 0;
-        while (counter < fivePence){
-            counter += 1;
-            Coin coin = new Coin(CoinType.FIVEPENCE);
-            changeList.add(coin);
-        }
-        counter = 0;
-        while (counter < twoPence){
-            counter += 1;
-            Coin coin = new Coin(CoinType.TWOPENCE);
-            changeList.add(coin);
-        }
-        counter = 0;
-        while (counter < onePence){
-            counter += 1;
-            Coin coin = new Coin(CoinType.ONEPENCE);
-            changeList.add(coin);
-        }
-
         coinReturn.setReturned(changeList);
-
-
     }
 
     public Product purchase(Drawer drawer) {

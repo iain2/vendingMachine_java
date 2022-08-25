@@ -5,10 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2cc964c1-66c9-4323-86e9-09cadfba6fee" name="Changes" comment="change return added">
-      <change afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vendingMachine/CoinReturn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vendingMachine/CoinReturn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vendingMachine/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vendingMachine/VendingMachine.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/vendingMachineTests/VendingMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vendingMachineTests/VendingMachineTest.java" afterDir="false" />
     </list>
@@ -138,9 +135,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.VendingMachineTest.canReturnChange" />
         <item itemvalue="JUnit.VendingMachineTest.canPurchaseItemInsufucientFunds" />
         <item itemvalue="JUnit.VendingMachineTest.canPurchaseItem" />
-        <item itemvalue="JUnit.VendingMachineTest.canReturnChange" />
         <item itemvalue="JUnit.VendingMachineTest.canGetProductPrice" />
       </list>
     </recent_temporary>
