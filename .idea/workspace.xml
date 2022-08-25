@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2cc964c1-66c9-4323-86e9-09cadfba6fee" name="Changes" comment="second commit">
+    <list default="true" id="2cc964c1-66c9-4323-86e9-09cadfba6fee" name="Changes" comment="change return added">
+      <change afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vendingMachine/CoinReturn.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vendingMachine/CoinReturn.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/vendingMachine/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vendingMachine/VendingMachine.java" afterDir="false" />
@@ -55,16 +57,21 @@
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.VendingMachineTest.canReturnChange">
-    <configuration name="All in VendingMachine_java" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="main.Main" />
       <module name="VendingMachine_java" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="TEST_OBJECT" value="package" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="main.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VendingMachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendingMachineTest.canGetProductPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VendingMachine_java" />
       <extension name="coverage">
         <pattern>
@@ -74,12 +81,13 @@
       </extension>
       <option name="PACKAGE_NAME" value="vendingMachineTests" />
       <option name="MAIN_CLASS_NAME" value="vendingMachineTests.VendingMachineTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="METHOD_NAME" value="canGetProductPrice" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VendingMachineTest.canCheckPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendingMachineTest.canPurchaseItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VendingMachine_java" />
       <extension name="coverage">
         <pattern>
@@ -89,7 +97,23 @@
       </extension>
       <option name="PACKAGE_NAME" value="vendingMachineTests" />
       <option name="MAIN_CLASS_NAME" value="vendingMachineTests.VendingMachineTest" />
-      <option name="METHOD_NAME" value="canCheckPrice" />
+      <option name="METHOD_NAME" value="canPurchaseItem" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="VendingMachineTest.canPurchaseItemInsufucientFunds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vendingMachineTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vendingMachineTests" />
+      <option name="MAIN_CLASS_NAME" value="vendingMachineTests.VendingMachineTest" />
+      <option name="METHOD_NAME" value="canPurchaseItemInsufucientFunds" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -111,29 +135,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VendingMachineTest.canUpdateTill" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="VendingMachine_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vendingMachineTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vendingMachineTests" />
-      <option name="MAIN_CLASS_NAME" value="vendingMachineTests.VendingMachineTest" />
-      <option name="METHOD_NAME" value="canUpdateTill" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.VendingMachineTest.canPurchaseItemInsufucientFunds" />
+        <item itemvalue="JUnit.VendingMachineTest.canPurchaseItem" />
         <item itemvalue="JUnit.VendingMachineTest.canReturnChange" />
-        <item itemvalue="JUnit.All in VendingMachine_java" />
-        <item itemvalue="JUnit.VendingMachineTest.canUpdateTill" />
-        <item itemvalue="JUnit.VendingMachineTest" />
-        <item itemvalue="JUnit.VendingMachineTest.canCheckPrice" />
+        <item itemvalue="JUnit.VendingMachineTest.canGetProductPrice" />
       </list>
     </recent_temporary>
   </component>
@@ -160,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658916069754</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="change return added">
+      <created>1658948353766</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1658948353768</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -189,6 +204,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="second commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="second commit" />
+    <MESSAGE value="change return added" />
+    <option name="LAST_COMMIT_MESSAGE" value="change return added" />
   </component>
 </project>

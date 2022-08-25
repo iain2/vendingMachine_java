@@ -35,4 +35,8 @@ public class CoinReturn {
     public void setReturned(ArrayList<Coin> returned) {
         this.returned = returned;
     }
+
+    public ArrayList<Coin> getReturned() {
+        return returned;
+    }
 }

@@ -57,6 +57,10 @@ public class VendingMachine {
         return drawers.get(code.getValue());
     }
 
+    public ArrayList<Drawer> getDrawers() {
+        return drawers;
+    }
+
     public Product getProduct(Drawer drawer) {
         return drawer.getProduct();
     }
@@ -74,7 +78,8 @@ public class VendingMachine {
     }
 
     public void returnChange(int change) {
-        ArrayList<Coin> changeList = new ArrayList<Coin>();
+        ArrayList<Integer> numberList = new ArrayList<>();
+        ArrayList<Coin> changeList = new ArrayList<>();
         int pounds = change / 100;
         int r = change % 100;
         int fiftyPence = r / 50;
@@ -86,8 +91,8 @@ public class VendingMachine {
         int fivePence = r4 / 5;
         int r5 = r4 % 5;
         int twoPence = r5 / 2;
-        int r6 = r5 % 2;
-        int onePence = r6 / 1;
+        int onePence = r5 % 2;
+
 
         int counter = 0;
         while (counter < pounds){
@@ -135,5 +140,20 @@ public class VendingMachine {
         coinReturn.setReturned(changeList);
 
 
+    }
+
+    public Product purchase(Drawer drawer) {
+        Product product = drawer.getProduct();
+        if (checkBalance(product) != true){
+            return null;
+        }
+        int change = getChangeValue(product);
+        returnChange(change);
+        this.till = new ArrayList<>();
+        return product;
+    }
+
+    public ArrayList getReturnedChange(){
+        return this.coinReturn.getReturned();
     }
 }

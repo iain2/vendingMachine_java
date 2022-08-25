@@ -6,6 +6,7 @@ import org.junit.Before;
 import org.junit.Test;
 import products.Cola;
 import products.Crisps;
+import products.Product;
 import products.Sweets;
 import vendingMachine.CodeType;
 import vendingMachine.CoinReturn;
@@ -13,6 +14,7 @@ import vendingMachine.Drawer;
 import vendingMachine.VendingMachine;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNull;
 
 public class VendingMachineTest {
 
@@ -127,6 +129,20 @@ public class VendingMachineTest {
     public void canReturnChange(){
         vendingMachine.returnChange(140);
         assertEquals(140, vendingMachine.getCoinReturnValue());
+    }
+
+    @Test
+    public void canPurchaseItem(){
+        vendingMachine.addCoin(coin);
+        Product e = vendingMachine.purchase(drawer1);
+        assertEquals(crisps, e);
+    }
+
+    @Test
+    public void canPurchaseItemInsufucientFunds(){
+        vendingMachine.addCoin(coin20);
+        Product e = vendingMachine.purchase(drawer1);
+        assertNull( e);
     }
 
 
