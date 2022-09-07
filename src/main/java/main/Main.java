@@ -15,14 +15,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
-
-
-
-
-
-
-
-
     public static void main(String[] args) {
 
         VendingMachine vendingMachine = new VendingMachine();
@@ -50,50 +42,67 @@ public class Main {
         vendingMachine.addDrawer(drawer1);
         vendingMachine.addDrawer(drawer2);
         vendingMachine.addDrawer(drawer3);
+        Drawer selectedDrawer = null;
+        Scanner in = new Scanner(System.in);
         while(true) {
-            System.out.println("Welcome to the vending machine, please select an option:" +
-                    "\n1. " + drawer1.getProduct().getName() +
-                    "\n2. " + drawer2.getProduct().getName() +
-                    "\n3. " + drawer3.getProduct().getName());
-            System.out.print("Option: ");
-            Scanner in = new Scanner(System.in);
-            ArrayList<Drawer> drawers = vendingMachine.getDrawers();
-            int selection = Integer.parseInt(in.next()) - 1;
-            Drawer selectedDrawer = drawers.get(selection);
-            System.out.print("You have selected: " + drawers.get(selection).getProduct().getName() +
-                    "\nPrice: " + drawers.get(selection).getProduct().getPrice() + "p");
+            boolean productSelected = false;
+            while (productSelected == false) {
+                System.out.println("Welcome to the vending machine, please select an option:" +
+                        "\n1. " + drawer1.getProduct().getName() +
+                        "\n2. " + drawer2.getProduct().getName() +
+                        "\n3. " + drawer3.getProduct().getName());
+                System.out.print("Option: ");
 
 
-                System.out.print("\nEnter coins:" +
-                        "\n1. 1p" +
-                        "\n2. 2p" +
-                        "\n3. 5p" +
-                        "\n4. 10p" +
-                        "\n5. 20p" +
-                        "\n6. 50p" +
-                        "\n7. £1" +
-                        "\n8. Done" +
-                        "\nCoin in:");
+                ArrayList<Drawer> drawers = vendingMachine.getDrawers();
+
+                try {
+                    int selection = Integer.parseInt(in.next()) - 1;
+                    selectedDrawer = drawers.get(selection);
+                    System.out.print("You have selected: " + drawers.get(selection).getProduct().getName() +
+                            "\nPrice: " + drawers.get(selection).getProduct().getPrice() + "p");
+                    if (selectedDrawer != null){
+                        productSelected = true;
+                    }
+                } catch (Exception e) {
+                    System.out.println("Invalid Selection");
+                }
+            }
             while(true) {
-                int input = Integer.parseInt(in.next()) - 1;
-                if(input == 7){
-                    Product product = vendingMachine.purchase(selectedDrawer);
-                    if(product == null){
-                        System.out.println("Insufficient funds");
-                    } else {
-                        System.out.println("Your Item: " + product.getName());
-                        System.out.println("Your Change: ");
-                        for (int c = 0; c < vendingMachine.getCoinReturnSize(); c++){
-                            Coin returnCoin = (Coin) vendingMachine.getReturnedChange().get(c);
-                            System.out.println(returnCoin.getCoinValue() +"p");
+                try {
+                    System.out.print("\nEnter coins:" +
+                            "\n1. 1p" +
+                            "\n2. 2p" +
+                            "\n3. 5p" +
+                            "\n4. 10p" +
+                            "\n5. 20p" +
+                            "\n6. 50p" +
+                            "\n7. £1" +
+                            "\n8. Done" +
+                            "\nCoin in:");
+                    int input = Integer.parseInt(in.next()) - 1;
+                    if (input == 7) {
+                        Product product = vendingMachine.purchase(selectedDrawer);
+                        if (product == null) {
+                            System.out.println("Insufficient funds");
+                        } else {
+                            System.out.println("Your Item: " + product.getName());
+                            System.out.println("Your Change: ");
+                            for (int c = 0; c < vendingMachine.getCoinReturnSize(); c++) {
+                                Coin returnCoin = (Coin) vendingMachine.getReturnedChange().get(c);
+                                System.out.println(returnCoin.getCoinValue() + "p");
+                            }
+
                         }
+                        return;
 
                     }
-                    return;
-
+                    vendingMachine.addCoin(coins.get(input));
+                    System.out.println("Total added: " + vendingMachine.getTillValue() + "p");
                 }
-                vendingMachine.addCoin(coins.get(input));
-                System.out.println("Total added: " +vendingMachine.getTillValue() + "p");
+             catch (Exception e) {
+                System.out.println("Invalid Selection");
+            }
             }
         }
     }

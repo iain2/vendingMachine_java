@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2cc964c1-66c9-4323-86e9-09cadfba6fee" name="Changes" comment="change return added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/vendingMachine/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vendingMachine/VendingMachine.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/vendingMachineTests/VendingMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vendingMachineTests/VendingMachineTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -68,7 +68,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="VendingMachineTest.canGetProductPrice" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="VendingMachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VendingMachine_java" />
       <extension name="coverage">
         <pattern>
@@ -78,8 +78,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="vendingMachineTests" />
       <option name="MAIN_CLASS_NAME" value="vendingMachineTests.VendingMachineTest" />
-      <option name="METHOD_NAME" value="canGetProductPrice" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -135,10 +134,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.VendingMachineTest" />
         <item itemvalue="JUnit.VendingMachineTest.canReturnChange" />
         <item itemvalue="JUnit.VendingMachineTest.canPurchaseItemInsufucientFunds" />
         <item itemvalue="JUnit.VendingMachineTest.canPurchaseItem" />
-        <item itemvalue="JUnit.VendingMachineTest.canGetProductPrice" />
       </list>
     </recent_temporary>
   </component>

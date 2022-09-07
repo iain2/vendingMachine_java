@@ -98,7 +98,7 @@ public class VendingMachineTest {
 
     @Test
     public void canGetProduct(){
-        assertEquals(crisps, vendingMachine.getProduct(drawer2));
+        assertEquals(cola, vendingMachine.getProduct(drawer2));
     }
 
     @Test
