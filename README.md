@@ -3,7 +3,7 @@
 ## About 
 
 OOP Design for the brains of a Vending Machine, using Java and a TDD approach. Allows a user to interact with a vending machine,
-inputing and option to select a product. The user then inputs coins to pay for the item, then the vending mahcine returns the
+inputing and option to select a product. The user then inputs coins to pay for the item, then the vending machine returns the
 item and correct amount of change. 
 
 ## Instructions 
