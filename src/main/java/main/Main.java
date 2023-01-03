@@ -67,7 +67,7 @@ public class Main {
             }
             while(true) {
                 try {
-                    System.out.print("\nEnter coins:" +
+                    System.out.print("\nEnter coins, 1p and 2p not accepted:" +
                             "\n1. 1p" +
                             "\n2. 2p" +
                             "\n3. 5p" +

@@ -103,7 +103,9 @@ public class VendingMachine {
                 changeList.add(coin);
             }
         }
-        coinReturn.setReturned(changeList);
+        for(int i =0; i<changeList.size(); i++){
+            coinReturn.addToReturned(changeList.get(i));
+        };
     }
 
     public Product purchase(Drawer drawer) {
