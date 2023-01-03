@@ -7,7 +7,7 @@
     <list default="true" id="2cc964c1-66c9-4323-86e9-09cadfba6fee" name="Changes" comment="change return added">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/main/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/vendingMachineTests/VendingMachineTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/vendingMachineTests/VendingMachineTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/vendingMachine/VendingMachine.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/vendingMachine/VendingMachine.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +31,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/adoptopenjdk-8.jdk/Contents/Home/src.zip!/java/io/PrintStream.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/main/java/vendingMachine/VendingMachine.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -68,6 +69,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CoinReturnTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vendingMachineTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vendingMachineTests" />
+      <option name="MAIN_CLASS_NAME" value="vendingMachineTests.CoinReturnTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DrawerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="VendingMachine_java" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="vendingMachineTests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="vendingMachineTests" />
+      <option name="MAIN_CLASS_NAME" value="vendingMachineTests.DrawerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="VendingMachineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="VendingMachine_java" />
       <extension name="coverage">
@@ -79,38 +110,6 @@
       <option name="PACKAGE_NAME" value="vendingMachineTests" />
       <option name="MAIN_CLASS_NAME" value="vendingMachineTests.VendingMachineTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VendingMachineTest.canPurchaseItem" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="VendingMachine_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vendingMachineTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vendingMachineTests" />
-      <option name="MAIN_CLASS_NAME" value="vendingMachineTests.VendingMachineTest" />
-      <option name="METHOD_NAME" value="canPurchaseItem" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="VendingMachineTest.canPurchaseItemInsufucientFunds" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="VendingMachine_java" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="vendingMachineTests.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="vendingMachineTests" />
-      <option name="MAIN_CLASS_NAME" value="vendingMachineTests.VendingMachineTest" />
-      <option name="METHOD_NAME" value="canPurchaseItemInsufucientFunds" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -134,10 +133,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CoinReturnTest" />
+        <item itemvalue="JUnit.DrawerTest" />
         <item itemvalue="JUnit.VendingMachineTest" />
         <item itemvalue="JUnit.VendingMachineTest.canReturnChange" />
-        <item itemvalue="JUnit.VendingMachineTest.canPurchaseItemInsufucientFunds" />
-        <item itemvalue="JUnit.VendingMachineTest.canPurchaseItem" />
       </list>
     </recent_temporary>
   </component>
@@ -202,5 +201,16 @@
     <MESSAGE value="second commit" />
     <MESSAGE value="change return added" />
     <option name="LAST_COMMIT_MESSAGE" value="change return added" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/vendingMachine/VendingMachine.java</url>
+          <line>91</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

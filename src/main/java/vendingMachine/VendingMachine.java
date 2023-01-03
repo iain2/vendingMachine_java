@@ -90,7 +90,7 @@ public class VendingMachine {
         coins.add(new Coin(CoinType.ONEPENCE));
 
         int r = change;
-        for(int i = 0; i < coins.size(); i++) {
+        for(int i = 0; r > 0; i++) {
             int c = r / coins.get(i).getCoinValue();
             r = change % coins.get(i).getCoinValue();
             numberList.add(c);

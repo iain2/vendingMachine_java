@@ -19,8 +19,8 @@ public class Main {
 
         VendingMachine vendingMachine = new VendingMachine();
         Sweets sweets = new Sweets("Gummy Drops", "Haribo",90);
-        Cola cola = new Cola("Lemonade", "Sprite", 80);
-        Crisps crisps = new Crisps("Cheese & Onion", "Walkers", 65);
+        Cola cola = new Cola("Lemonade", "Sprite", 85);
+        Crisps crisps = new Crisps("Cheese & Onion", "Walkers", 67);
         Drawer drawer1 = new Drawer(crisps, CodeType.A1);
         Drawer drawer2 = new Drawer(cola, CodeType.A2);
         Drawer drawer3 = new Drawer(sweets,CodeType.A3);
@@ -52,10 +52,7 @@ public class Main {
                         "\n2. " + drawer2.getProduct().getName() +
                         "\n3. " + drawer3.getProduct().getName());
                 System.out.print("Option: ");
-
-
                 ArrayList<Drawer> drawers = vendingMachine.getDrawers();
-
                 try {
                     int selection = Integer.parseInt(in.next()) - 1;
                     selectedDrawer = drawers.get(selection);
@@ -92,15 +89,13 @@ public class Main {
                                 Coin returnCoin = (Coin) vendingMachine.getReturnedChange().get(c);
                                 System.out.println(returnCoin.getCoinValue() + "p");
                             }
-
                         }
                         return;
-
                     }
                     vendingMachine.addCoin(coins.get(input));
                     System.out.println("Total added: " + vendingMachine.getTillValue() + "p");
                 }
-             catch (Exception e) {
+                catch (Exception e) {
                 System.out.println("Invalid Selection");
             }
             }
